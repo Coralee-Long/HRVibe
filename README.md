@@ -38,7 +38,7 @@ serving as a showcase of full-stack development skills.
 - ESLint and Prettier for code quality
 - [Frontend README](frontend/README_FE)
 
-**Backend:**
+#### Backend:
 
 - Spring Boot (Java 17)
 - MongoDB
