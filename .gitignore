@@ -2,7 +2,6 @@
 .DS_Store
 *.log
 *.env
-node_modules/
 dist/
 build/
 coverage/
@@ -26,7 +25,7 @@ backend/.classpath
 backend/.project
 backend/.settings/
 backend/logs/
-backend/.idea/
+backend/idea/
 backend/*.iml
 
 # Maven
@@ -35,11 +34,5 @@ target/
 dependency-reduced-pom.xml
 
 # Docker
-docker-compose.override.yml
-*.swp
-
-# VSCode-specific
-.vscode/
-
-# System files
-Thumbs.db
+**/docker-compose.override.yml
+**/docker-compose.override.yaml
