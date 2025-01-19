@@ -1,58 +1,48 @@
-# React + TypeScript + Vite
+# HRVibe Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Overview
 
-Currently, two official plugins are available:
+The frontend for HRVibe is a React + TypeScript application designed to provide
+a clean and interactive user interface for visualizing health and activity data.
+It communicates with the backend API to fetch data and displays key metrics such
+as HRV, sleep, and activity trends.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 2. Structure
 
-## Expanding the ESLint configuration
+The project follows a modular structure for scalability and maintainability:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- `src/components`: Reusable UI components (e.g., charts, cards, forms).
+- `src/pages`: Page-level components for specific views (e.g., Dashboard,
+  Insights).
+- `src/styles`: Global styles and theme settings.
+- `src/utils`: Utility functions for data formatting and API integration.
 
-- Configure the top-level `parserOptions` property like this:
+## 3. Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+- **Frameworks and Libraries:** React, TypeScript
+- **Build Tool:** Vite
+- **Styling:** CSS (or a preferred styling library, if applicable)
+- **Code Quality:** ESLint, Prettier
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
-
-# Commands:
-
-**Run ESLint:**
+## 4. Setup
 
 ```bash
-  npm run lint
+  npm install
+  npm run dev
 ```
+
+### **Available Commands**
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run preview`: Serves the production build locally.
+- `npm run lint`: Runs ESLint for code quality checks.
+
+## 5. Development Notes
+
+- **Styling Conventions:** Use consistent class naming and CSS practices for
+  scalability.
+- **Code Quality:** Run `npm run lint` before committing changes to ensure
+  consistency.
+- **Future Additions:** Expand on folder structure and component descriptions as
+  features are added.
