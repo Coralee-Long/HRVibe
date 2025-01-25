@@ -40,7 +40,7 @@ serving as a showcase of full-stack development skills.
 
 #### Backend:
 
-- Spring Boot (Java 17)
+- Spring Boot (Java 23)
 - MongoDB
 - REST APIs
 - [Backend README](backend/README_BE.md)
